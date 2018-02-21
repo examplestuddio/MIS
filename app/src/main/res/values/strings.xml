@@ -1,0 +1,181 @@
+<resources>
+    <string name="app_name">MISD</string>
+
+    <string name="personal_key">Personal Key</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="no_of_incorrect_attempts">No of incorrect attempts: </string>
+    <string name="scan_code">scan</string>
+    <string name="sign_up">sign up</string>
+    <string name="form_for_create_new_account">Форма для створення аккаунта</string>
+    <string name="first_name">Прізвище:</string>
+    <string name="last_name">Ім\'я:</string>
+    <string name="thirst_name">По-батькові:</string>
+    <string name="date_of_birth">Дата народження: </string>
+    <string name="series">серія</string>
+    <string name="number_of_passport">номер паспорта</string>
+    <string name="work_email">робоча електронна пошта</string>
+    <string name="email">Email:</string>
+    <string name="identification_code">identification code</string>
+    <string name="generate_document">generate document</string>
+
+    <string-array name="classificationByContent">
+        <item>Політична</item>
+        <item>Економічна</item>
+        <item>Військова</item>
+        <item>Розвідувальна</item>
+        <item>Контррозвідувальна</item>
+        <item>Науково-технічна</item>
+        <item>Технологічна</item>
+        <item>Ділова</item>
+        <item>Комерційна</item>
+    </string-array>
+
+    <string-array name="classificationByType">
+        <item>Статистична</item>
+        <item>Адміністративна</item>
+        <item>Масова</item>
+        <item>Про діяльність державних\n органів влади та органів\n
+            місцевого і\n регіонального самоврядування</item>
+        <item>Правова</item>
+        <item>Про особу</item>
+        <item>Довідково-енциклопедичного\n характеру</item>
+        <item>Соціологічна</item>
+    </string-array>
+
+    <string-array name="classificationByWayOfDocumenting">
+        <item>Паперова</item>
+        <item>Фотографічна</item>
+        <item>Носій механічного звукозапису</item>
+        <item>Магнітні(стрічки, диски, карти)</item>
+        <item>Оптичні лазерні диски</item>
+    </string-array>
+
+    <string-array name="dates">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+
+    <string-array name="months">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="years">
+        <item>2000</item>
+        <item>1999</item>
+        <item>1998</item>
+        <item>1997</item>
+        <item>1996</item>
+        <item>1995</item>
+        <item>1994</item>
+        <item>1993</item>
+        <item>1992</item>
+        <item>1991</item>
+        <item>1990</item>
+        <item>1989</item>
+        <item>1988</item>
+        <item>1987</item>
+        <item>1986</item>
+        <item>1985</item>
+        <item>1984</item>
+        <item>1983</item>
+        <item>1982</item>
+        <item>1981</item>
+        <item>1980</item>
+        <item>1979</item>
+        <item>1978</item>
+        <item>1977</item>
+        <item>1976</item>
+        <item>1975</item>
+        <item>1974</item>
+        <item>1973</item>
+        <item>1972</item>
+        <item>1971</item>
+        <item>1970</item>
+        <item>1969</item>
+        <item>1968</item>
+        <item>1967</item>
+        <item>1966</item>
+        <item>1965</item>
+        <item>1964</item>
+        <item>1963</item>
+        <item>1962</item>
+        <item>1961</item>
+        <item>1960</item>
+    </string-array>
+
+    <string name="action_settings">Settings</string>
+    <string name="turn_on_flashlight">Turn ON</string>
+    <string name="turn_off_flashlight">Turn OFF</string>
+    <string name="application_for_registration">Заявка на реєстрацію</string>
+    <string name="series_and_number_of_passport">Серія та номер паспорта:</string>
+    <string name="photo_of_user">Photo of User</string>
+    <string name="position">Посада:</string>
+    <string name="submit_an_application">Подати заявку</string>
+    <string name="hint_user_id">ID пользователя</string>
+    <string name="get_custom_token">Получите токен</string>
+    <string name="sign_in">Логин</string>
+    <string name="create_account">Создайте аккаунт</string>
+    <string name="sign_out">Выход</string>
+    <string name="verify_email">Проверка email</string>
+    <string name="disconnect">Дисконнект</string>
+    <string name="loading">Загрузка...</string>
+    <string name="custom_token">Кастомный токен</string>
+    <string name="signed_in">Залогинен</string>
+    <string name="signed_out">Разлогинен</string>
+    <string name="token_null">Токен: null</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Пароль</string>
+    <string name="desc_firebase_lockup">Firebase лого и имя</string>
+    <string name="auth_failed">Аутентификация не удалась</string>
+    <string name="start_phone_auth">Начало</string>
+    <string name="verify_phone_auth">Проверка</string>
+    <string name="resend_phone_auth">Направить снова</string>
+    <string name="hint_phone_number">Тел. номер</string>
+    <string name="hint_verification_code">Проверочный код</string>
+    <string name="status_code_sent">Код отправлен</string>
+    <string name="status_verification_failed">Проверка не удалась</string>
+    <string name="status_verification_succeeded">Проверка удалась</string>
+    <string name="status_sign_in_failed">Логин не удался</string>
+    <string name="instant_validation">(мгновенная проверка)</string>
+</resources>

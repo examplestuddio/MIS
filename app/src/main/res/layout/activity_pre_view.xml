@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/applicationForRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/application_for_registration"
+        android:textSize="18sp"
+        android:layout_marginLeft="68dp" />
+
+    <TextView
+        android:id="@+id/PreViewFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/first_name"
+        />
+
+    <TextView
+        android:id="@+id/firstNameUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:text="Іванов"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/PreViewLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/last_name"
+        />
+
+    <TextView
+        android:id="@+id/lastNameUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Іван"
+        android:textStyle="bold"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/PreViewThirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/thirst_name"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/thirstNameUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Іванович"
+        android:textStyle="bold"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="10dp" />
+
+    <ImageView
+        android:id="@+id/photoOfUser"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/photo_of_user"
+        app:srcCompat="@mipmap/non_face_round"
+        android:layout_marginLeft="200dp"
+        android:onClick="onClickPhotoOfUser"/>
+
+
+
+    <TextView
+        android:id="@+id/seriesAndNumberOfPassport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/series_and_number_of_passport"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:id="@+id/seriesAndNumberOfPassportUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/number_of_passport"
+        android:textStyle="bold"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/PreViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:id="@+id/PreViewEmailUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="example@gmail.com"
+        android:textStyle="bold"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:id="@+id/PreViewPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/position"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:id="@+id/PreViewPositionUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Директор нерозбірчивого підприємства"
+        android:textStyle="bold"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="10dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/submit_an_application"
+        android:layout_marginTop="325dp"
+        android:onClick="onClickSubmitAnApplication"
+        />
+
+    <LinearLayout
+        android:layout_width="304dp"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:id="@+id/PreViewDateOfBirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date_of_birth"
+            />
+
+        <TextView
+            android:id="@+id/getDateOfBirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10.11.2012"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+</RelativeLayout>
