@@ -166,17 +166,6 @@ public class LoginActivity extends AppCompatActivity implements
 
     // Дисконнект
     private void revokeAccess() {
-        // Логаут
-        // mAuth.signOut();
-
-        // Гугл дисконнект
-//        Auth.GoogleSignInApi.revokeAccess(mGoogleApiClient).setResultCallback(
-//                new ResultCallback<Status>() {
-//                    @Override
-//                    public void onResult(@NonNull Status status) {
-//                        updateUI(null);
-//                    }
-//                });
         Intent intent = new Intent(LoginActivity.this,HomeUserActivity.class);
         intent.putExtra("email",textView.getText().toString());
         startActivity(intent);

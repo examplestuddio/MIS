@@ -18,7 +18,7 @@
     <string name="email">Email:</string>
     <string name="identification_code">identification code</string>
     <string name="generate_document">generate document</string>
-<string name="user_name">User name: </string>
+    <string name="user_name">User name: </string>
     <string-array name="classificationByContent">
         <item>Політична</item>
         <item>Економічна</item>
@@ -184,4 +184,5 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="ic_menu_exit">&#xE15E;</string>
+    <string name="search_documents">Пошук документів</string>
 </resources>
