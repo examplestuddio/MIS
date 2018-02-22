@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.Auth;
@@ -27,7 +28,7 @@ import com.google.android.gms.common.api.Status;
 public class LoginActivity extends AppCompatActivity implements
         GoogleApiClient.OnConnectionFailedListener,
         View.OnClickListener {
-
+    TextView textView;
     // Для логов
     private static final String TAG = "GoogleActivity";
     // Рандомное число для использования константы
@@ -177,6 +178,7 @@ public class LoginActivity extends AppCompatActivity implements
 //                    }
 //                });
         Intent intent = new Intent(LoginActivity.this,HomeUserActivity.class);
+        intent.putExtra("email",textView.getText().toString());
         startActivity(intent);
     }
 
@@ -184,7 +186,8 @@ public class LoginActivity extends AppCompatActivity implements
     private void updateUI(FirebaseUser user) {
         if (user != null) {
 
-
+             textView = findViewById(R.id.logEmail);
+            textView.setText(user.getEmail());
             findViewById(R.id.sign_in_button).setVisibility(View.GONE);
             findViewById(R.id.sign_out_and_disconnect).setVisibility(View.VISIBLE);
         } else {

@@ -18,7 +18,7 @@
     <string name="email">Email:</string>
     <string name="identification_code">identification code</string>
     <string name="generate_document">generate document</string>
-
+<string name="user_name">User name: </string>
     <string-array name="classificationByContent">
         <item>Політична</item>
         <item>Економічна</item>

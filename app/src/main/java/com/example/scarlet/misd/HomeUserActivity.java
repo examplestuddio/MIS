@@ -1,6 +1,8 @@
 package com.example.scarlet.misd;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.view.View;
@@ -12,15 +14,32 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
+import com.google.android.gms.auth.api.Auth;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.ResultCallback;
+import com.google.android.gms.common.api.Status;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.UserInfo;
 
 public class HomeUserActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
+    private FirebaseAuth mAuth;
+    // Переменная для доступа к сервису Гугл
+    private GoogleApiClient mGoogleApiClient;
+  //  TextView fullNameUser;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_user);
         Toolbar toolbar =  findViewById(R.id.toolbar);
+       // FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        FirebaseUser   user = mAuth.getCurrentUser();
+        updateUI(user);
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -38,10 +57,52 @@ public class HomeUserActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
+
+        Intent intent = getIntent();
+        String email = intent.getStringExtra("email");
         NavigationView navigationView = findViewById(R.id.nav_view);
+
         navigationView.setNavigationItemSelectedListener(this);
+        View headerView = navigationView.getHeaderView(0);
+
+        if (user != null) {
+            for (UserInfo profile : user.getProviderData()) {
+                TextView profileFullName = headerView.findViewById(R.id.profileFullNameUser);
+                TextView profileEmailUser = headerView.findViewById(R.id.profileEmailUser);
+                ImageView iconUser = headerView.findViewById(R.id.iconUser);
+                profileFullName.setText(profile.getDisplayName());
+                profileEmailUser.setText(email);
+
+                Glide
+                        .with(this)
+                        .load(profile.getPhotoUrl())
+                        .into(iconUser);
+            }
+        }
     }
 
+    // Логаут
+    private void signOut() {
+        // Логаут
+        mAuth.signOut();
+
+        // Гугл логаут
+        Auth.GoogleSignInApi.signOut(mGoogleApiClient).setResultCallback(
+                new ResultCallback<Status>() {
+                    @Override
+                    public void onResult(@NonNull Status status) {
+                        updateUI(null);
+                    }
+                });
+    }
+    private void updateUI(FirebaseUser user) {
+        if (user != null) {
+        }else{
+            Intent intent = new Intent(HomeUserActivity.this,LoginActivity.class);
+            startActivity(intent);
+        }
+
+        }
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -92,6 +153,8 @@ public class HomeUserActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_send) {
 
+        }else if (id == R.id.nav_exit){
+            signOut();
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
