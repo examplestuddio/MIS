@@ -178,4 +178,10 @@
     <string name="status_verification_succeeded">Проверка удалась</string>
     <string name="status_sign_in_failed">Логин не удался</string>
     <string name="instant_validation">(мгновенная проверка)</string>
+    <string name="title_activity_home_user">HomeUserActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="ic_menu_exit">&#xE15E;</string>
 </resources>

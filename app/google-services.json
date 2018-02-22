@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "515895950236",
+    "firebase_url": "https://misd-abe80.firebaseio.com",
+    "project_id": "misd-abe80",
+    "storage_bucket": "misd-abe80.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515895950236:android:2928c81a1e307265",
+        "android_client_info": {
+          "package_name": "com.example.scarlet.misd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "515895950236-nct2qkhb9fbcvfkkqgsh7q9lq1vr6l01.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.scarlet.misd",
+            "certificate_hash": "4ba3834d63dbd96a9856b199b99c4577646eb6e8"
+          }
+        },
+        {
+          "client_id": "515895950236-rmfkp533k08r9lc0i7m75c9ro82ta8bp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADdBRMFkTsNwoHFMofJe_QOgBc5vCe_nI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "515895950236-rmfkp533k08r9lc0i7m75c9ro82ta8bp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

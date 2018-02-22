@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.scarlet.misd">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,7 +21,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".PreViewActivity" />
-        <activity android:name=".FormForSignUpActivity"></activity>
+        <activity android:name=".FormForSignUpActivity" />
+        <activity
+            android:name=".HomeUserActivity"
+            android:label="@string/title_activity_home_user"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
